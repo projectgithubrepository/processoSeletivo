@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display-swap");
+
+* {
+    box-sizing: border-box;
+    color: rgb(12, 12, 107);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+input, select, button {
+    border-radius: 6px;
+    border-color: inherit;
+    height: 2rem;
+}
+
+button {
+    background-color: rgb(12, 12, 107);
+    color: white;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+label {
+    font-size: small;
+    font-weight: bold;
+
+    
+}
+
+#container1 {
+    position: absolute;
+    top: 14rem;
+    left: 8rem;
+    
+}
+
+#container2 {
+    position: absolute;
+    top: 14rem;
+    right: 8rem;
+    
+    
+}
+
+#addProduto {
+
+}
