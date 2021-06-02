@@ -9,62 +9,50 @@
     <script src="script.js" defer></script>
     
 </head>
-<body>
+<body>  
     <div id="container1">
-        <h1>CADASTRAR PRODUTO</h1> 
-        <label>NOME PRODUTO</label><br/>
-        <input id="nomeProduto">
+        
+            <h3 id="cadastrarProdutoH3">CADASTRAR PRODUTO</h3> 
+            <label>NOME PRODUTO</label><br/>
+            <input id="nomeProduto" maxlength="8">
 
-        <br/><br/>
-        <label>FABRICANTE PRODUTO</label><br/>
-        <select id="fabricanteProduto">
-            <option value="nestle">Nestlé</option>
-            <option value="FABRICANTE2">FABRICANTE2</option>
-            <option value="FABRICANTE3">FABRICANTE3</option>
-        </select>
+            <br/><br/>
+            <label>FABRICANTE PRODUTO</label><br/>
+            <select id="fabricanteProduto">
+                <option value="nestle">Nestlé</option>
+                <option value="FABRICANTE2">FABRICANTE2</option>
+                <option value="FABRICANTE3">FABRICANTE3</option>
+            </select>
 
-        <br/><br/>
-        <label>CATEGORIA PRODUTO</label><br/>
-        <select id="categoriaProduto"></select>
+            <br/><br/>
+            <label>CATEGORIA PRODUTO</label><br/>
+            <select id="categoriaProduto">
+                <option value="cat1">cat1</option>
+                <option value="cat2">cat2</option>
+                <option value="cat3">cat3</option>
+            </select>
 
-        <br/><br/>
-        <label>QUANTIDADE</label><br/>
-        <input id="quantidade">
+            <br/><br/>
+            <label>QUANTIDADE</label><br/>
+            <input id="quantidade" maxlength="3" type="number">
 
-        <br/><br/>
-        <label>VALOR UNIDADE</label><br/>
-        <input id="valorUnidade">
+            <br/><br/>
+            <label>VALOR UNIDADE</label><br/>
+            <input id="valorUnidade" maxlength="4" type="number">
 
-        <br/><br/>
-        <button id="addProduto">Adicionar Produto</button>
+            <br/><br/>
+            <button id="addProduto">Adicionar Produto</button>
+        
     </div>
     <div id="container2">
-        <h1>PRODUTOS CADASTRADOS</h1> 
-        
+        <div id="sub-container"> 
+            <h3 id="produtosCadastrados">PRODUTOS CADASTRADOS</h3> 
+            <div id="sub-sub-container">
+                <label>BUSCAR PRODUTO</label><br/>
+                <input/>
+                <button id="btnBuscar">BUSCAR</button>
+            </div>
+        </div>
     </div>
-
-    <script>
-        let a= document.getElementById("fabricanteProduto");
-        if (a === "nestle") {
-            opt = document.createElement("option");
-            opt.appendChild(document.createTextNode("categoriaN1"));
-            opt.value = 'option value';
-            a.appendChild(opt);
-            
-            //     let array = ["categoriaN1", "categoriaN2"];
-        
-        // if (a === "FABRICANTE2") {
-        //     let array = ["categoriaF1", "categoriaF2"];
-        // }
-        // if (a === "FABRICANTE3") {
-        //     let array = ["categoriaG1", "categoriaG2"];
-        // }
-        // else { var array = [];}
-    
-        // var string = "";
-        // for (i=0;i<array.length;i++) {
-        //     string=string+array[i];
-        }
-    </script>
 </body>
 </html>

@@ -14,10 +14,11 @@ body {
     min-height: 100vh;
 }
 
-input, select, button {
+input, select, button, #buscar {
     border-radius: 6px;
     border-color: inherit;
     height: 2rem;
+    
 }
 
 button {
@@ -30,25 +31,62 @@ button {
 label {
     font-size: small;
     font-weight: bold;
+}
 
-    
+alert {
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.toast {
+    list-style-type: none;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 2.5rem;
 }
 
 #container1 {
     position: absolute;
     top: 14rem;
     left: 8rem;
-    
+}
+
+#quantidade, #valorUnidade {
+    width: 5rem;
+}
+
+#fabricanteProduto, #categoriaProduto {
+    width: 11rem;
 }
 
 #container2 {
     position: absolute;
     top: 14rem;
     right: 8rem;
-    
+    align-items: center;
+}
+
+#sub-container {
+    display: flex;
     
 }
 
-#addProduto {
+#sub-sub-container {
+    float: right;
+    margin-left: 20px;
+}
 
+#sub-sub-container button {
+    width: 5rem;
+}
+
+#cadastrarProdutoH3 {
+    margin-top: 2rem;
+}
+
+#produtosCadastrados {
+    margin-top: 2rem;
 }
